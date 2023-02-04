@@ -1,0 +1,59 @@
+
+  body {
+      background-image: url("Images/standard.gif");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position:center 25%;
+      overflow: hidden;
+      font-family: 'Anton', sans-serif;     
+  }
+
+  .Text {
+    background-color: rgba(240, 248, 255, 0.151);
+    width: 500px;
+    margin-left: 35%;
+    margin-top: 90px;
+    justify-content: center;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 25px;
+    
+  }
+  .Community {
+    color: blue;
+    animation: color-change 5s infinite;
+  }
+  
+  @keyframes color-change {
+    0% {
+      color: blue;
+    }
+    25% {
+      color: red;
+    }
+    50% {
+      color: green;
+    }
+    75% {
+      color: yellow;
+    }
+    100% {
+      color: blue;
+    }
+  }
+ 
+  
+  
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 700px;
+    margin-top: 300px;
+  }
+  
+  footer nav a {
+    display: inline-block;
+    padding: 10px;
+  }
