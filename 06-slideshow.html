@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="slideshow.css">
+</head>
+<body>
+    <div class="slideshow">
+        <div class="slide">
+            <img src="gallerie/Back_4_Blood_Screenshot_2022.09.23_-_18.37.13.31.png" alt="Eine Familie am Meer" class="slide-bild">
+            <div class="slide-textbereich">
+                <h3 class="slide-ueberschrift">Geniales Game!!</h3>
+                <p class="slide-beschreibung">Mehr muss man nicht sagen.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="gallerie/Content_Screenshot_2022.10.18_-_21.12.35.40.png" alt="HODENKARZINOM" class="slide-bild">
+            <div class="slide-textbereich">
+                <h3 class="slide-ueberschrift">Was man so alles mit Mods anstellen kann </h3>
+                <p class="slide-beschreibung">Doch sei gewarnt! Zu hoch ist nicht immer gut </p>
+            </div>  
+        </div>
+        <div class="slide">
+            <img src="gallerie/Oac_Screenshot_2022.11.30_-_17.19.45.26.png" alt="Eine Frau im Pool" class="slide-bild">
+            <div class="slide-textbereich">
+                <h3 class="slide-ueberschrift">Der Einarmige </h3>
+                <p class="slide-beschreibung">Hierzu gibt es eigentlich auch nicht viel zu sagen</p>
+            </div>  
+        </div>
+        <a class="pfeil pfeil-links" onclick="umschalten(-1)"><span>&#10094;</span></a>
+        <a class="pfeil pfeil-rechts" onclick="umschalten(1)"><span>&#10095;</span></a>
+        <ol class="indikatorenliste">
+            <li class="indikator" onclick="springeZuEintrag(0)">&#8226;</li>
+            <li class="indikator" onclick="springeZuEintrag(1)">&#8226;</li>
+            <li class="indikator" onclick="springeZuEintrag(2)">&#8226;</li>
+        </ol>
+    </div>
+    <script src="slideshow.js"></script>
+
+    <footer>
+        <nav>
+            <a href="./01-index.html">Home</a>
+            <a href="#" onclick="window.history.back();">Back</a>
+            <a href="#">Impressum</a>
+        </nav>
+    </footer>
+</body>
+</html>
